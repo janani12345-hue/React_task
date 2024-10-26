@@ -1,17 +1,35 @@
-import React from 'react';
+
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState, useEffect } from 'react';
+import Counter from './btncounter';
+import Toogle from './toggle';
+import Input from './input';
+import RetrieveData from './fetch';
+import List from './list';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
+
+const root = ReactDOM.createRoot(document.getElementById("root"))
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+<div style={{textAlign:"center"}}><Counter></Counter><hr></hr>
+    <Toogle></Toogle><hr></hr>
+    <Input></Input><hr></hr>
+    <RetrieveData></RetrieveData><hr></hr>
+    <List></List></div>
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
